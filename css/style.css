@@ -2,87 +2,117 @@
     font-family: 'Gotham';
     src: url("../fonts/14006.otf");
 }
+
 @font-face {
     font-family: 'Gotham Medium';
     src: url("../fonts/14012.otf");
 }
+
 @font-face {
     font-family: 'Gotham Book';
     src: url("../fonts/14008.otf");
 }
+
 @font-face {
     font-family: 'Myriad Pro';
     src: url("../fonts/8143.otf");
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gotham Book', sans-serif;
     color: #fff;
 }
-a, a:hover{
+
+a,
+a:hover {
     text-decoration: none;
 }
-a, ul, li{
+
+a,
+ul,
+li {
     display: block;
 }
-h1, h2, h3, h4, h5, h6,
-p, ul, li{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
     margin-bottom: 0;
 }
-header{
+
+.container {
+    max-width: 1220px;
+}
+
+header {
     position: absolute;
     width: 100%;
     height: 115px;
     z-index: 5;
-    border-bottom: 1px solid rgba(255,255,255,0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     display: flex;
-
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 0 15px;
+    margin: 0 10px;
+    padding: 22px 0;
 }
-nav a{
+
+nav a {
     position: relative;
-    width: 80px;
-    height: 80px;
+    width: 79px;
+    height: 75px;
 }
-nav a span{
+
+nav a span {
     display: flex;
     color: white;
-    font-size: 30px;
     padding: 12px;
 }
+
 nav a span:before,
-nav a span:after{
+nav a span:after {
     content: '';
     position: absolute;
-    width: 68px;
-    height: 68px;
+    width: 67px;
+    height: 67px;
 }
-nav a span:before{
+
+nav a span:before {
     top: 0;
     left: 0;
     background: #11749E;
     z-index: -1;
 }
-nav a span:after{
+
+nav a span:after {
     bottom: 0;
     right: 0;
-    background: #fff;
+    background: rgba(255, 255, 255, .75);
     z-index: -2;
 }
-.logo span{
+
+.logo span {
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
     font-weight: bold;
+    margin: -2px 2px;
 }
-.top-menu{
+
+.top-menu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,32 +120,36 @@ nav a span:after{
     left: 0;
     right: 0;
 }
-.top-menu li a{
+
+.top-menu li a {
     font-size: 20px;
     color: #fff;
     margin: 0 25px;
     display: inline;
     font-family: 'Myriad Pro', sans-serif;
 }
-.top-menu li a:hover{
+
+.top-menu li a:hover {
     border-bottom: 5px solid #11749E;
     text-decoration: none;
     padding-bottom: 40px;
 }
-.social-icons span{
+
+.social-icons span {
     font-size: 20px;
     margin: 15px;
 }
 
-.main{
+#main {
     position: relative;
     background: url("../images/bg.png") no-repeat top center;
-    height: 880px   ;
+    height: 880px;
     overflow: hidden;
     display: flex;
     align-items: center;
 }
-.heading{
+
+.heading {
     margin: auto;
     width: 900px;
     height: 450px;
@@ -124,14 +158,16 @@ nav a span:after{
     justify-content: center;
     align-items: center;
 }
-.heading-title{
+
+.heading-title {
     font-family: 'Gotham', sans-serif;
     font-size: 152px;
     font-weight: bold;
     color: #f5f5f5;
     text-transform: uppercase;
 }
-.heading-text{
+
+.heading-text {
     font-family: 'Gotham Medium', sans-serif;
     font-size: 25px;
     font-weight: normal;
@@ -140,34 +176,40 @@ nav a span:after{
     text-align: center;
     letter-spacing: 20px;
 }
-.title{
+
+.title {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: relative;
 }
-.title h2{
+
+.title h2 {
+    font-family: 'Gotham Medium', sans-serif;
     font-size: 37px;
     color: white;
     text-transform: uppercase;
     position: absolute;
 }
-.title span{
+
+.title span {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 247px;
     font-weight: bold;
     position: static;
-    color: #3C8DAF;
+    color: rgba(34, 34, 34, .7);
 }
-.heading b{
+
+.heading b {
     position: absolute;
     bottom: 180px;
     font-family: "OpenSans", sans-serif;
     font-weight: normal;
     font-size: 13px;
 }
-.btn-arrow{
+
+.btn-arrow {
     border: 2px solid #fff;
     border-radius: 50%;
     width: 70px;
@@ -179,20 +221,20 @@ nav a span:after{
     justify-content: center;
     align-items: center;
 }
-.features{
+
+#features {
     background: #11749E;
 }
-.row{
-    margin: 0 -30px;
-}
-.feature{
+
+.feature {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 135px;
+    padding-bottom: 135px;
 }
-.feature-icon{
+
+.feature-icon {
     width: 135px;
     height: 135px;
     background: #2E85AA;
@@ -201,107 +243,274 @@ nav a span:after{
     justify-content: center;
     align-items: center;
 }
-.feature h3{
+
+.feature h3 {
     font-size: 18px;
     text-transform: uppercase;
     font-weight: lighter;
     margin: 25px 0 30px;
 }
-.feature p{
-    font-size: 15px;
 
+.feature p {
+    font-size: 15px;
 }
-.culture{
-    margin: 0 -15px;
+
+.news-items {
     height: 450px;
-    position: relative;
     background: #222222;
+    width: 100%;
 }
-.culture2{
+
+.news-items2 {
     background: #F3F3F3;
 }
-.text-culture1, .text-culture2{
-    position: absolute;
+
+.text-culture1,
+.text-culture2 {
     width: 470px;
     height: 260px;
-    bottom: 0;
-    right: 0;
-    margin: 0 100px 100px 0;
 }
-.text-culture2{
-    top: 0;
-    left: 0;
-    margin: 100px 0 0 100px;
-}
-.culture pre, .culture h3, .culture p{
+
+.text-culture2 {}
+
+.news-items pre,
+.news-items h3,
+.news-items p {
     color: #fff;
 }
-.culture pre{
+
+.news-items pre {
     font-size: 13px;
 }
-.culture h3{
+
+.news-items h3 {
     font-family: 'Gotham Medium', sans-serif;
     font-size: 25px;
     margin-bottom: 35px;
 }
-.culture p{
+
+.news-items p {
     font-size: 15px;
 }
-.culture2 pre, .culture2 h3, .culture2 p{
+
+.news-items2 pre,
+.news-items2 h3,
+.news-items2 p {
     color: #000;
 }
-.culture img{
+
+.news-items img {
     width: 100%;
     height: 100%;
 }
-.blog .title h2{
+
+#blog .title h2 {
     font-family: 'Gotham Medium', sans-serif;
     font-size: 37px;
     color: #000;
 }
-.blog .title span{
-    color: #D7D7D7;
-}
-.blog .title h3{
+
+#blog .title h3 {
     color: #000;
     margin: -70px 0 50px;
 }
-.blog-area{
+
+.blog-area {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-bottom: 105px;
 }
-.blog-area img{
+
+.blog-area img {
     width: 100%;
 }
-.blog-area h4{
+
+.blog-area h4 {
     font-family: 'Gotham Medium', sans-serif;
     color: #11749e;
     font-size: 18px;
     margin: 45px 0 30px;
 }
-.blog-area p{
+
+.blog-area p {
     font-size: 15px;
     color: #000;
 }
-.quick-action{
+
+.quick-action {
     padding: 100px 0 150px;
     background: #11749E;
 }
-.action{
+
+.action {
     display: flex;
     align-items: center;
 }
-.action img{
+
+.action img {
     width: 70px;
     height: 70px;
     margin-right: 30px;
 }
-.action p{
+
+.action p {
     font-size: 15px;
 }
-.phone-app{
+
+#phone-app {
     background: url("../images/bg2.png") no-repeat top center;
 }
 
+.phone {
+    margin: 100px 125px 100px 0;
+}
+
+.phone h2 {
+    font-family: 'Gotham Medium', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 125px 0 40px;
+}
+
+.phone p {
+    font-size: 15px;
+    margin-bottom: 70px;
+}
+
+a.press {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: 'Gotham Medium', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    width: 370px;
+    height: 40px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    background: #11749E;
+    text-decoration: none;
+}
+
+a.press:nth-last-child(2) {
+    width: 400px;
+}
+
+a.press:last-child {
+    width: 430px;
+}
+
+.our-team {
+    margin-bottom: 125px;
+}
+
+.our-team .title h2 {
+    color: #000;
+}
+
+.our-team .title h3 {
+    color: #000;
+    margin: -70px 0 50px;
+}
+
+.team-member {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.team-content {
+    position: absolute;
+    bottom: -40px;
+    width: 220px;
+    height: 90px;
+    background: #fff;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-content h3 {
+    font-family: 'Gotham Medium', sans-serif;
+    font-size: 20px;
+    color: #11749E;
+    line-height: 30px;
+}
+
+.team-content p {
+    font-family: 'Gotham Medium', sans-serif;
+    font-size: 15px;
+    color: #000;
+}
+
+#contact-us {
+    background: url("../images/bg3.png") no-repeat top center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 0 100px;
+}
+
+#contact-us .text-content {
+    width: 30%;
+    height: 45px;
+    border: 1px solid white;
+    background: transparent;
+    padding-left: 25px;
+    margin-bottom: 35px;
+}
+
+.text-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+#message {
+    width: 100%;
+    height: 150px;
+    border: 1px solid white;
+    background: transparent;
+    padding-left: 25px;
+    margin-bottom: 45px;
+    padding-top: 15px;
+}
+
+#contact-us .btn {
+    width: 230px;
+    height: 65px;
+    background: #11749E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 0;
+    margin: auto;
+}
+
+#map {
+    height: 350px;
+}
+
+footer {
+    background: #222222;
+    height: 115px;
+    display: flex;
+    align-items: center;
+}
+
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-footer h5 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 13px;
+}
